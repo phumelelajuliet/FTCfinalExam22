@@ -1,0 +1,28 @@
+{
+  "name": "ftcfinalexam22",
+  "version": "1.0.0",
+  "description": "FTC final exam question 2.2",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phumelelajuliet/FTCfinalExam22.git"
+  },
+  "keywords": [
+    "FTC"
+  ],
+  "author": "Phumelela Juliet Magagula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phumelelajuliet/FTCfinalExam22/issues"
+  },
+  "homepage": "https://github.com/phumelelajuliet/FTCfinalExam22#readme",
+  "dependencies": {
+    "openzeppelin-solidity": "^2.3.0"
+  }
+}
