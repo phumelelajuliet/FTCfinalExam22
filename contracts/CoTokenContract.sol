@@ -67,7 +67,7 @@ contract CoBondingToken is ERC20, ERC20Mintable, Ownable{
     //mint function
     function _mint(address account, uint256 amount) internal {
         require(account != address(0), "ERC20: mint to the zero address");
-
+        buyPrice();
         _totalSupply = _totalSupply.add(amount);
         _balances[account] = _balances[account].add(amount);
         emit Transfer(address(0), account, amount);
@@ -76,7 +76,7 @@ contract CoBondingToken is ERC20, ERC20Mintable, Ownable{
     //burn function
     function _burn(address account, uint256 value) internal {
         require(account != address(0), "ERC20: burn from the zero address");
-
+        sellPrice();
         _totalSupply = _totalSupply.sub(value);
         _balances[account] = _balances[account].sub(value);
         emit Transfer(account, address(0), value);
